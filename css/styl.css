@@ -1,0 +1,46 @@
+.container{
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    gap: 25px;
+    grid-template-areas: 'header header header'
+                          'main main main'
+                          'hero hero hero'
+                          'feature slidebar slidebar'
+                          'testimonal slidebar slidebar '
+                          'footer footer footer';
+
+}
+.container > div{
+    padding: 15px;
+}
+.header{
+    grid-area: header;
+    background: black;
+    color: white;
+}
+.main{
+    grid-area: main;
+    background: #636363;
+    
+}
+.hero{
+    grid-area: hero;
+    background: #909090;
+}
+.feature{
+    grid-area: feature;
+    background: #D4D4D4;
+}
+.testimonal{
+    grid-area: testimonal;
+    background: #D4D4D4;
+}
+.slidebar{
+    grid-area: slidebar;
+    background: #D4D4D4;
+}
+.footer{
+    grid-area: footer;
+    background: black;
+    color: white;
+}
